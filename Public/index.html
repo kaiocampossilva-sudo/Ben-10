@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="theme-color" content="#050a05">
+    <title>Cadastro — Ben 10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Rubik:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="cadastro"><canvas id="fx"></canvas>
+    <div class="flash" id="flash"></div>
+    <div class="toast" id="toast" role="status"></div>
+    <main class="wrap">
+        <div class="card">
+            <div class="omni" id="omni" title="Clique!"><svg viewBox="0 0 100 100">
+                    <path d="M18 10h64L54 50l28 40H18l28-40z" fill="#39ff14" />
+                    <path d="M30 18h40L50 46zM30 82h40L50 54z" fill="#111" />
+                </svg></div>
+            <h1>Ative o Omnitrix</h1>
+            <p class="sub">Crie sua conta de herói para falar com os aliens.</p>
+            <form id="form" novalidate>
+                <div><label for="usuario">Nome de herói</label><input id="usuario" placeholder="Ben Tennyson"
+                        autocomplete="username" required></div>
+                <div><label for="email">E-mail</label><input id="email" type="email" placeholder="ben@omnitrix.com"
+                        autocomplete="email" required></div>
+                <div><label for="senha">Senha</label><input id="senha" type="password" placeholder="Mínimo 6 caracteres"
+                        autocomplete="new-password" minlength="6" required></div>
+                <button class="btn" type="submit">Criar conta</button>
+            </form>
+            <p class="alt">Já tem conta? <a href="login.html">Entrar</a></p>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

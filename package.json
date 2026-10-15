@@ -1,0 +1,14 @@
+{
+  "name": "ben10-omnitrix-chat",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --use-system-ca server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^4.22.3"
+  }
+}
